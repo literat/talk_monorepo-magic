@@ -1,5 +1,9 @@
 # Workspaces
 
+- https://yarnpkg.com/features/workspaces
+- https://pnpm.io/workspaces
+- https://docs.npmjs.com/cli/v9/using-npm/workspaces
+
 - Enables package linking (local dependencies) and hoisting.
 - Integrated into package managers (Yarn, pnpm, npm 7+).
 - Great for lightweight monorepos.
@@ -38,6 +42,12 @@ Linking local dependencies In web-app/package.json:
 }
 ```
 
+Focus install
+
+```bash
+yarn workspaces focus @my-org/app
+```
+
 Running scripts across workspaces:
 
 ```bash
@@ -50,7 +60,7 @@ npm run build --workspace=web-app
 
 Running scripts across all workspaces:
 ```bash
-yarn workspaces run build
+yarn workspaces foreach --all run build
 ```
 
 Running since:

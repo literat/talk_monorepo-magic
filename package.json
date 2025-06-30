@@ -1,7 +1,0 @@
-{
-  "name": "talk_monorepo-magic",
-  "packageManager": "yarn@4.1.1",
-  "devDependencies": {
-    "nx": "21.2.1"
-  }
-}
